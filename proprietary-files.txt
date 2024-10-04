@@ -250,8 +250,8 @@ lib/libFacePreProcessing.camera.samsung.so:vendor/lib/libFacePreProcessing.camer
 lib64/libFacePreProcessing.camera.samsung.so:vendor/lib64/libFacePreProcessing.camera.samsung.so
 lib64/libFacialStickerEngine.arcsoft.so:vendor/lib64/libFacialStickerEngine.arcsoft.so
 vendor/lib/camera/components/com.qti.camx.chiiqutils.so
-vendor/lib/camera/components/com.qti.eisv2.so
-vendor/lib/camera/components/com.qti.eisv3.so
+vendor/lib/camera/components/com.qti.eisv2.so;DISABLE_CHECKELF
+vendor/lib/camera/components/com.qti.eisv3.so;DISABLE_CHECKELF
 vendor/lib/camera/components/com.qti.node.depth.so
 vendor/lib/camera/components/com.qti.node.dummyrtb.so
 vendor/lib/camera/components/com.qti.node.dummysat.so
@@ -265,7 +265,7 @@ vendor/lib/camera/components/com.qti.node.swregistration.so
 vendor/lib/camera/components/com.qti.stats.aec.so
 vendor/lib/camera/components/com.qti.stats.af.so
 vendor/lib/camera/components/com.qti.stats.afd.so
-vendor/lib/camera/components/com.qti.stats.asd.so
+vendor/lib/camera/components/com.qti.stats.asd.so;DISABLE_CHECKELF
 vendor/lib/camera/components/com.qti.stats.awb.so
 vendor/lib/camera/components/com.qti.stats.haf.so
 vendor/lib/camera/components/com.qti.stats.hafoverride.so
@@ -348,7 +348,6 @@ vendor/lib/liblivefocus_preview_engine.so
 vendor/lib/liblivefocus_preview_interface.so
 vendor/lib/libllhdr_interface.so
 vendor/lib/liblow_light_hdr.so
-vendor/lib/libmpbase.so
 vendor/lib/libqcwrappercommon.so
 vendor/lib/libsmartfocus_interface.so
 vendor/lib/libsmartfocusengine.so
@@ -356,12 +355,12 @@ vendor/lib/libsnap_vndk.so
 vendor/lib/libswldc_capture_core.camera.samsung.so
 vendor/lib/libswregistrationalgo.so
 vendor/lib/libuniplugin.so
-vendor/lib/libvdis_core.so
+vendor/lib/libvdis_core.so;DISABLE_CHECKELF
 vendor/lib/libvdis_interface.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
-vendor/lib64/camera/components/com.qti.eisv2.so
-vendor/lib64/camera/components/com.qti.eisv3.so
+vendor/lib64/camera/components/com.qti.eisv2.so;DISABLE_CHECKELF
+vendor/lib64/camera/components/com.qti.eisv3.so;DISABLE_CHECKELF
 vendor/lib64/camera/components/com.qti.node.depth.so
 vendor/lib64/camera/components/com.qti.node.dummyrtb.so
 vendor/lib64/camera/components/com.qti.node.dummysat.so
@@ -373,7 +372,7 @@ vendor/lib64/camera/components/com.qti.node.memcpy.so
 vendor/lib64/camera/components/com.qti.node.stich.so
 vendor/lib64/camera/components/com.qti.node.swregistration.so
 vendor/lib64/camera/components/com.qti.stats.afd.so
-vendor/lib64/camera/components/com.qti.stats.asd.so
+vendor/lib64/camera/components/com.qti.stats.asd.so;DISABLE_CHECKELF
 vendor/lib64/camera/components/com.qti.stats.hafoverride.so
 vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
@@ -450,7 +449,6 @@ vendor/lib64/liblivefocus_capture_interface.so
 vendor/lib64/liblivefocus_preview_engine.so
 vendor/lib64/liblivefocus_preview_interface.so
 vendor/lib64/liblow_light_hdr.so
-vendor/lib64/libmpbase.so
 vendor/lib64/libqcwrappercommon.so
 vendor/lib64/libremosaic_daemon.so
 vendor/lib64/libremosaiclib.so
@@ -463,9 +461,9 @@ vendor/lib64/libsnpe_wrapper.so
 vendor/lib64/libswldc_capture_core.camera.samsung.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libuniplugin.so
-vendor/lib64/libvdis_core.so
+vendor/lib64/libvdis_core.so;DISABLE_CHECKELF
 vendor/lib64/libvdis_interface.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so;MODULE_SUFFIX=_vendor
 
 # Fingerprint
 vendor/lib/libbauthserver.so
@@ -473,21 +471,21 @@ vendor/lib/libbauthtzcommon.so
 vendor/lib/libegis_fp_normal_sensor_test.so
 vendor/lib/libgf_in_system_lib.so
 vendor/lib/libqfp_sensortest.so
-vendor/lib/libsynaFpSensorTestNwd.so
+vendor/lib/libsynaFpSensorTestNwd.so;DISABLE_CHECKELF
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libbauthserver.so
 vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
 vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libqfp_sensortest.so
-vendor/lib64/libsynaFpSensorTestNwd.so
+vendor/lib64/libsynaFpSensorTestNwd.so;DISABLE_CHECKELF
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # NFC
-vendor/bin/hw/nxp.android.hardware.nfc@1.1-service
+vendor/bin/hw/nxp.android.hardware.nfc@1.1-service:vendor/bin/hw/nxp.android.hardware.nfc@1.1-service.samsung;DISABLE_CHECKELF
 vendor/etc/init/init.nfc.samsung.rc
-vendor/etc/init/nxp.android.hardware.nfc@1.1-service.rc
-vendor/lib64/nfc_nci_nxp.so
+vendor/etc/init/nxp.android.hardware.nfc@1.1-service.rc:vendor/etc/init/nxp.android.hardware.nfc@1.1-service.samsung.rc;DISABLE_CHECKELF
+vendor/lib64/nfc_nci_nxp.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.nxp.nxpnfc@1.1.so
 
 # NFC (Firmware)
@@ -529,11 +527,5 @@ vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/stk3a6x_0.json
 vendor/etc/sensors/config/vcnl36811_0.json
 vendor/bin/factory.ssc
-vendor/lib/libsensorlistener.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib/sensors.grip.so
-vendor/lib/sensors.ssc.so
-vendor/lib64/libsensorlistener.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/sensors.grip.so
-vendor/lib64/sensors.ssc.so
